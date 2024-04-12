@@ -23,69 +23,90 @@
             </div>
         </div>
 
-        <!-- header -->
-        <div class="header-main">
+        <div class="mobile-header-main">
             <div class="container">
-                <div class="header">
+                <div class="mobile-header">
+                    <button class="mobile-bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                     <div class="headerlogo">
                         <h1>Sparkle Fashion</h1>
                     </div>
-
-                    <div class="headersearch">
-                        <form action="#" class="searchform">
-                            <label for="search" class="dnone">search</label>
-                            <input class="search-input" type="search" name="search" id="search"
-                                placeholder="Search For Product  Categories Brands Etc...">
-                            <input class="searchbutton" type="submit" value="Search">
-                        </form>
-                    </div>
-
-                    <div class="headeraccount">
-                        <div class="account">
-                            <img src="./img/profile.png" alt="account">
-                            <div class="inner-account">
-                                <span class="welcome">Hi, Welcome !!</span>
-                                <form action="#">
-                                    <label for="account" class="dnone">account</label>
-                                    <select name="account" id="account" class="select-account">
-                                        <option value="Rahul Hirani">Rahul Hirani</option>
-                                        <option value="my account">my account</option>
-                                    </select>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="favourites">
-                            <img src="./img/Heart 1.png" alt="favicon">
-                            <span class="tooltip">0</span>
-                        </div>
-
-                        <div class="cart">
-                            <img src="./img/cart 2.png" alt="cart">
-                            <span class="tooltip">0</span>
-                        </div>
+                    <div class="cart">
+                        <img class="cart-desktop" src="./img/cart-desktop.png" alt="cart-desktop">
+                        <img class="cart-mobile" src="./img/cart-mobile.png" alt="cart-mobile">
+                        <span class="tooltip">0</span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- navigation bar -->
 
-        <nav class="navlist-main">
-            <div class="container">
-                <ul class="navlist">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Mens</a></li>
-                    <li><a href="#"> Womens</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Brands</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Shipping Returns</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
+        <div class="desktop-header">
+            <!-- header -->
+            <div class="header-main">
+                <div class="container">
+                    <div class="header">
+                        <div class="headerlogo">
+                            <h1>Sparkle Fashion</h1>
+                        </div>
+
+                        <div class="headersearch">
+                            <form action="#" class="searchform">
+                                <label for="search" class="dnone">search</label>
+                                <input class="search-input" type="search" name="search" id="search"
+                                    placeholder="Search For Product  Categories Brands Etc...">
+                                <input class="searchbutton" type="submit" value="Search">
+                            </form>
+                        </div>
+
+                        <div class="headeraccount">
+                            <div class="account">
+                                <img src="./img/profile.png" alt="account">
+                                <div class="inner-account">
+                                    <span class="welcome">Hi, Welcome !!</span>
+                                    <form action="#">
+                                        <label for="account" class="dnone">account</label>
+                                        <select name="account" id="account" class="select-account">
+                                            <option value="Rahul Hirani">Rahul Hirani</option>
+                                            <option value="my account">my account</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="favourites">
+                                <img src="./img/Heart 1.png" alt="favicon">
+                                <span class="tooltip">0</span>
+                            </div>
+
+                            <div class="cart">
+                                <img src="./img/cart 2.png" alt="cart">
+                                <span class="tooltip">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
+            <!-- navigation bar -->
+
+            <nav class="navlist-main">
+                <div class="container">
+                    <ul class="navlist">
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">Mens</a></li>
+                        <li><a href="#"> Womens</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Brands</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shipping Returns</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
     </header>
 
     <!-- Slider -->
@@ -765,14 +786,70 @@
                 prevArrow: '<i class="fa-solid fa-caret-left arrowprev"></i>'
             });
 
+            // $('.mostpopular').slick({
+            //     dots: false,
+            //     infinite: true,
+            //     nextArrow: '<i class="fa-solid fa-caret-right arrownext"></i>',
+            //     prevArrow: '<i class="fa-solid fa-caret-left arrowprev"></i>',
+            //     responsive: [
+            //         {
+            //             breakpoint: 1024,
+            //             settings: {
+            //                 slidesToShow: 3,
+            //                 slidesToScroll: 3,
+            //             }
+            //         },
+            //         {
+            //             breakpoint: 600,
+            //             settings: {
+            //                 slidesToShow: 2,
+            //                 slidesToScroll: 2
+            //             }
+            //         },
+            //         {
+            //             breakpoint: 480,
+            //             settings: {
+            //                 slidesToShow: 1,
+            //                 slidesToScroll: 1
+            //             }
+            //         }
+            //     ]
+            // });
+
             $('.mostpopular').slick({
-                dots: false,
-                // arrows: false,
-                infinite: true,
+                dots: true,
+                infinite: false,
+                speed: 300,
                 slidesToShow: 4,
                 slidesToScroll: 4,
-                nextArrow: '<i class="fa-solid fa-caret-right arrownext"></i>',
-                prevArrow: '<i class="fa-solid fa-caret-left arrowprev"></i>'
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
             });
         });
 
