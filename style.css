@@ -159,13 +159,6 @@ nav .navlist li a {
     margin-bottom: 0px;
 }
 
-.intro {
-    width: 501px;
-    height: 18px;
-    top: 388px;
-    left: 150px;
-}
-
 .slider .heading {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 18px;
@@ -174,26 +167,12 @@ nav .navlist li a {
     text-align: left;
 }
 
-.subintro {
-    width: 676px;
-    height: 108px;
-    top: 430px;
-    left: 150px;
-}
-
 .slider .heading1 {
     font-family: "Playfair Display", sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 54px;
     text-align: left;
-}
-
-.subintro2 {
-    width: 651px;
-    height: 63px;
-    top: 562px;
-    left: 150px;
 }
 
 .slider .heading2 {
@@ -225,6 +204,8 @@ nav .navlist li a {
 
 .shopbutton {
     margin-top: 40px;
+    display: flex;
+    gap: 10px;
 }
 
 .slider {
@@ -540,6 +521,27 @@ a {
 @media only screen and (min-width: 1024px) {
     .desktop-header {
         display: block;
+    }
+
+    .intro {
+        width: 501px;
+        height: 18px;
+        top: 388px;
+        left: 150px;
+    }
+
+    .subintro {
+        width: 676px;
+        height: 108px;
+        top: 430px;
+        left: 150px;
+    }
+
+    .subintro2 {
+        width: 651px;
+        height: 63px;
+        top: 562px;
+        left: 150px;
     }
 
     .categories-top,
